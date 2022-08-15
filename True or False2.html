@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        body{
+            background-image:url("https://wallpaperaccess.com/full/89793.jpg");
+    }
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>True or False Game</title>
+    <style>
+        body{
+            background-color: rgb(0, 0, 0);
+            color: white;
+        }
+
+        .button {
+            background-color: rgb(83, 83, 83);
+            color: rgb(255, 255, 255);
+        }
+
+        iframe{
+             margin-left: 70%;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Answer the question below</h1>
+    <h3 id = "score">Score: 0</h3>
+    </div>
+    <hr style="width:50%;height:3px;border-width:0;color:rgb(253, 253, 253);background-color:gray">
+    <h1 id = "question">e</h1>
+    <script>
+          alert("We are going to play a true or false game!")
+         alert("I, your beloved computer L.E.D, will ask 19 questions.")
+         alert("You have to guess if the statement I made is either true or false. 't' = true and 'f' = false.")
+         alert("Hint: Some are biased.")
+         alert("Click on the video to play music as you play. Right click on the video and press 'Loop' to loop the song.")
+         alert("Good Luck!")
+
+    var count = 0, score = 0; 
+
+    var listOfQuestions=[
+     { q: "Batman's father's name is Thomas Wayne.", a: "t" },
+        { q: "Naruto's signature food is Ramen.", a: "t" },
+        { q: "Vanny in FNAF is Roxanne.", a: "f" },
+        { q: "Voltron is made out of giant robotic mice.", a: "f" },
+        { q: "Legolas's lastname is elfington.", a: "f" },
+        { q: "Hippocampus is half horse-half fish.", a: "t" },
+        { q: "Grogu is cute", a: "t" },
+        { q: "Ahsoka Tano is the best character", a: "t" },
+        { q: "'Anima' is a interesting comic book series", a: "t" },
+        { q: "'Turning Red' was a very cute movie", a: "t" },
+        { q: "Furies are the best", a: "t" },
+        { q: "The Hollow was annoying", a: "t" },
+        { q: "Burritos are the future", a: "t" },
+        { q: "Mr.Roger wears an Itachi ring", a: "t" },
+        { q: "Supreme pizzas are supreme", a: "f" },
+        { q: "Mac & cheese is better than ribs", a: "t" },
+        { q: "Shrimp is worse than chicken", a: "f" },
+        { q: "Flamin' hot mac & cheese is not very hot", a: "t" },
+        { q: "Hawaiian Pizza is the best pizza", a: "t" }
+    ];
+
+
+    document.getElementById("question").innerHTML = listOfQuestions[count].q;
+
+    
+    document.onkeyup   = function (event) {
+        var input = event.key;
+        if(input == "t" || input == "f"){
+            if (listOfQuestions[count].a == input) {
+                alert("You must be a fan! 100% right!");
+                score++;
+                document.getElementById("score").innerHTML = "Score: " + score;
+            }
+            else{
+                alert("WRONG! Go and do your homework!");
+            }
+            count++;
+            if(count < 19){
+                document.getElementById("question").innerHTML = listOfQuestions[count].q;
+            }
+            else{
+                alert("End of game, so take your fingers off the keys! Yes, Hawaiian Pizza is the best pizza there is. If you have anything on the contrary to say, you can take it up tp my complaint department: the trash.");
+                    alert("Good Job! Your " + document.getElementById("score").innerHTML + ". You get an extra point just for playing! Refresh the page to start again!")
+               }
+        }
+        else{
+            alert("Please type either 't' for true or 'f' for false");
+        }
+    }
+    </script>
+     <iframe width="399" height="300" src="https://www.youtube.com/embed/f_c12NQe67E" title="Adventure Time Stakes Full Outro Song [fixed volume]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+     <iframe width="399" height="300" src="https://www.youtube.com/embed/QwdbFNGCkLw" title="Nightcore - Ievan Polkka (VSNS Remix)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+     <p> <bold> <marquee direction="left">............................... Channel your inner Riddler ......... You Got This! ............. Use your Byakugan or Sharingan .......... You can do it!Believe it!........... Use your chakra and ace this thing! ......................</marquee> </bold> </p>
+   </body>
+</html>
