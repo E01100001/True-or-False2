@@ -50,21 +50,21 @@
     var count = 0, score = 0; 
 
     var listOfQuestions=[
-     { q: "Batman's father's name is Thomas Wayne.", a: "t" },
-        { q: "Naruto's signature food is Ramen.", a: "t" },
-        { q: "Voltron is made out of giant robotic mice.", a: "f" },
-        { q: "Legolas's lastname is elfington.", a: "f" },
-        { q: "Hippocampus is half horse-half fish.", a: "t" },
-        { q: "Grogu is sometimes called 'Baby Yoda'.", a: "t" },
-        { q: "Ahsoka Tano's species is togruta.", a: "t" },
-        { q: "In the movie 'Turning Red', females turn into giant pandas", a: "f" },
-        { q: "'MLP: A New Generation' has adult messages about today's world.", a: "t" },
-        { q: "Arceus is the most powerful pokemon of all pokemon.", a: "t" },
-        { q: "Magpie is just like Catwoman", a: "t" },
-        { q: "Burritos are the future", a: "t" },
-        { q: "Lord Beerus is the God of Destruction of Universe 7.", a: "t" },
-        { q: "Lord Champa is the God of Destruction of Universe 6 and Beerus's brother.", a: "f" },
-        { q: "Hawaiian Pizza is the best pizza", a: "t" }
+     { q: "Jesus was born in the town of Nazareth.", a: "f" },
+        { q: "Ham, Shem, and Japheth were Noah’s three sons.", a: "t" },
+        { q: "Moses fled to Midian after killing an Egyptian.", a: "f" },
+        { q: "At the wedding in Damascus, Jesus turned water into wine.", a: "f" },
+        { q: "God dispatched Jonah to Nineveh.", a: "t" },
+        { q: "Jesus healed Lazarus of his blindness.", a: "f" },
+        { q: "The tax collector passed by on the other side in the parable of the Good Samaritan.", a: "f" },
+        { q: "Isaac was Abraham’s first son.", a: "f" },
+        { q: "On the way to Damascus, Paul was converted.", a: "t" },
+        { q: "The 5,000 people were fed with five loaves and two fish.", a: "t" },
+        { q: "John the Baptist baptized Jesus.", a: "t" },
+        { q: "Mary, Jesus’ mother, was present at the wedding in Cana.", a: "t" },
+        { q: "The Prodigal Son was employed as a shepherd.", a: "t" },
+        { q: "During one of Paul’s lengthy sermons, Tychicus fell out of the window and died.", a: "t" },
+        { q: "In Jericho, Jesus noticed Zacchaeus climbing a sycamore tree.", a: "t" }
     ];
 
 
@@ -87,7 +87,7 @@
                 document.getElementById("question").innerHTML = listOfQuestions[count].q;
             }
             else{
-                alert("End of game, so take your fingers off the keys! Yes, Hawaiian Pizza is the best pizza there is. If you have anything on the contrary to say, you can take it up tp my complaint department: the trash.");
+                alert("End of game. You did well! As the bible says 'Ask and it will be given to you. Seek and you shall find.'");
                     alert("Good Job! Your " + document.getElementById("score").innerHTML + ". You get an extra point just for playing! Refresh the page to start again!")
                }
         }
